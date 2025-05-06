@@ -2,8 +2,8 @@ const params = new URLSearchParams(window.location.search);
 const name = params.get('name');
 const room = params.get('room');
 document.getElementById("roomName").textContent = `Chat Room: ${room}`;
-const ws = new WebSocket(`wss://chat-worker.your-subdomain.workers.dev/room/${room}?name=${name}`);
 
+const ws = new WebSocket(`wss://chat-worker.ishanislam13.workers.dev/room/${room}?name=${name}`);
 const messagesDiv = document.getElementById("messages");
 
 ws.onmessage = event => {
