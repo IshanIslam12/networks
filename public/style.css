@@ -1,0 +1,50 @@
+body {
+  font-family: "Georgia", serif;
+  background: white;
+  text-align: center;
+  margin-top: 50px;
+}
+
+form {
+  margin-bottom: 10px;
+}
+
+input, button {
+  padding: 5px;
+  margin: 2px;
+}
+
+.chat-box {
+  border: 1px solid black;
+  margin: 0 auto;
+  width: 70%;
+  height: 400px;
+  overflow-y: auto;
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#chatForm {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+#messageInput {
+  width: 60%;
+  padding: 6px;
+}
+
+button {
+  padding: 6px 10px;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 20px;
+  font-size: 12px;
+}
