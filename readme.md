@@ -1,4 +1,4 @@
-lone the project repository
+Clone the project repository
 Open your terminal and type:
 git clone https://github.com/YOUR_USERNAME/chat-app.git
 Then navigate into the project directory:
