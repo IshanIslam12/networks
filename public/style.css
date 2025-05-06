@@ -17,12 +17,14 @@ input, button {
 .chat-box {
   border: 1px solid black;
   margin: 0 auto;
-  width: 70%;
+  width: 80%;
+  max-width: 700px;
   height: 400px;
   overflow-y: auto;
   background: #f8f8f8;
   padding: 10px;
   border-radius: 10px;
+  text-align: left;
 }
 
 #chatForm {
