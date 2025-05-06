@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enter Chat Room</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Enter Chat Room</h2>
+  <form id="joinForm">
+    <label>Name: <input type="text" id="username" required></label><br>
+    <input type="text" id="roomCode" placeholder="Room Code" required>
+    <button type="submit">Join a Room</button><br><br>
+    <button type="button" onclick="createRoom()">Create a Room</button>
+  </form>
+
+  <script>
+    function createRoom() {
+      const code = Math.random().toString(36).substr(2, 4).toUpperCase();
+      const name = document.getElementById('username').value;
+      if (!name) return alert('Enter a name first.');
+      window.location.href = `room.html?room=${code}&name=${name}`;
+    }
+
+    document.getElementById('joinForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const room = document.getElementById('roomCode').value.toUpperCase();
+      const name = document.getElementById('username').value;
+      window.location.href = `room.html?room=${room}&name=${name}`;
+    });
+  </script>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Enter Chat Room</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Enter Chat Room</h2>
+  <form id="joinForm">
+    <label>Name: <input type="text" id="username" required></label><br>
+    <input type="text" id="roomCode" placeholder="Room Code" required>
+    <button type="submit">Join a Room</button><br><br>
+    <button type="button" onclick="createRoom()">Create a Room</button>
+  </form>
+
+  <script>
+    function createRoom() {
+      const code = Math.random().toString(36).substr(2, 4).toUpperCase();
+      const name = document.getElementById('username').value;
+      if (!name) return alert('Enter a name first.');
+      window.location.href = `room.html?room=${code}&name=${name}`;
+    }
+
+    document.getElementById('joinForm').addEventListener('submit', e => {
+      e.preventDefault();
+      const room = document.getElementById('roomCode').value.toUpperCase();
+      const name = document.getElementById('username').value;
+      window.location.href = `room.html?room=${room}&name=${name}`;
+    });
+  </script>
+</body>
+</html>
